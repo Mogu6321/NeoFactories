@@ -17,7 +17,7 @@ public class NeoFactories_Tabs {
 
     public static final Supplier<CreativeModeTab> TAB = CREATIVE_MODE_TAB.register("tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(NeoFactories_items.TERMIUM.get()))
-                    .title(Component.translatable("creativetab.tutorialmod.tab"))
+                    .title(Component.translatable("creativetab.neofactories.tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(NeoFactories_items.TERMIUM);
                         output.accept(NeoFactories_blocks.TERMIUM_ORE);
