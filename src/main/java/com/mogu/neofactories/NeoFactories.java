@@ -24,9 +24,9 @@ public class NeoFactories {
             modEventBus.addListener(this::commonSetup);
 
             NeoForge.EVENT_BUS.register(this);
-
-            NeoFactories_items.register(modEventBus);
-            NeoFactories_blocks.register(modEventBus);
+            NeoFactories_Tabs.register(modEventBus);//タブ
+            NeoFactories_items.register(modEventBus);//アイテム
+            NeoFactories_blocks.register(modEventBus);//ブロック
         }
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
