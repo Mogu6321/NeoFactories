@@ -22,7 +22,7 @@ public class NeoFactories_blocks {
 //こっからブロック記述
 
     public static final DeferredBlock<Block> TERMIUM_ORE = registerBlock("termium_ore", ()-> new DropExperienceBlock(UniformInt.of(5, 10),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-//木材系
+//木材系ブロック
     public static final DeferredBlock<LeavesBlock> SOLICA_LEAVES = registerBlock("solica_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> SOLICA_PLANKS = registerBlock("solica_planks", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     public static final DeferredBlock<RotatedPillarBlock> SOLICA_LOG = registerBlock("solica_log", ()-> new NeoFactories_LogBlock(Block.Properties.ofFullCopy(Blocks.OAK_LOG)));
