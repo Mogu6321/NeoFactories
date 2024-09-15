@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "neofactories:block/stripped_solica_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "neofactories:block/stripped_solica_wood"
+    },
+    "axis=z": {
+      "model": "neofactories:block/stripped_solica_wood",
+      "x": 90
+    }
+  }
+}
