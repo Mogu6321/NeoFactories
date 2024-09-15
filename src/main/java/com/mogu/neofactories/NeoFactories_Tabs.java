@@ -27,6 +27,14 @@ public class NeoFactories_Tabs {
                         output.accept(NeoFactories_blocks.SOLICA_WOOD);
                         output.accept(NeoFactories_blocks.STRIPPED_SOLICA_LOG);
                         output.accept(NeoFactories_blocks.STRIPPED_SOLICA_WOOD);
+                        output.accept(NeoFactories_blocks.SOLICA_BUTTON);
+                        output.accept(NeoFactories_blocks.SOLICA_DOOR);
+                        output.accept(NeoFactories_blocks.SOLICA_FENCE);
+                        output.accept(NeoFactories_blocks.SOLICA_FENCE_GATE);
+                        output.accept(NeoFactories_blocks.SOLICA_PRESSURE_PLATE);
+                        output.accept(NeoFactories_blocks.SOLICA_SLAB);
+                        output.accept(NeoFactories_blocks.SOLICA_STAIRS);
+                        output.accept(NeoFactories_blocks.SOLICA_TRAPDOOR);
                     }).build());
 
     public static void register(IEventBus eventBus) {
