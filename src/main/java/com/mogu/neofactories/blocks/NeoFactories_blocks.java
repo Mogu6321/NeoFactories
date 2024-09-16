@@ -35,7 +35,7 @@ public class NeoFactories_blocks {
     public static final DeferredBlock<FenceGateBlock> SOLICA_FENCE_GATE = registerBlock("solica_fence_gate", () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(2f)));
     public static final DeferredBlock<DoorBlock> SOLICA_DOOR = registerBlock("solica_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> SOLICA_TRAPDOOR = registerBlock("solica_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
-
+    public static final DeferredBlock<Block> SOLICA_SAPLING = registerBlock("solica_sapling",()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
