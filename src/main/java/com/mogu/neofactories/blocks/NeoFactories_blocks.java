@@ -19,8 +19,6 @@ public class NeoFactories_blocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(NeoFactories.MODID);
 
-//こっからブロック記述
-
     public static final DeferredBlock<Block> TERMIUM_ORE = registerBlock("termium_ore", ()-> new DropExperienceBlock(UniformInt.of(5, 10),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 //木材系ブロック
     public static final DeferredBlock<LeavesBlock> SOLICA_LEAVES = registerBlock("solica_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
