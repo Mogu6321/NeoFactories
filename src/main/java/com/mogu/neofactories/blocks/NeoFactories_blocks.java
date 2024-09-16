@@ -27,14 +27,14 @@ public class NeoFactories_blocks {
     public static final DeferredBlock<RotatedPillarBlock> STRIPPED_SOLICA_LOG = registerBlock("stripped_solica_log", ()->new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<RotatedPillarBlock> SOLICA_WOOD = registerBlock("solica_wood", ()-> new NeoFactories_LogBlock(Block.Properties.ofFullCopy(Blocks.OAK_WOOD)));
     public static final DeferredBlock<RotatedPillarBlock> STRIPPED_SOLICA_WOOD = registerBlock("stripped_solica_wood", ()->new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final DeferredBlock<StairBlock> SOLICA_STAIRS = registerBlock("solica_stairs", () -> new StairBlock(NeoFactories_blocks.SOLICA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<SlabBlock> SOLICA_SLAB = registerBlock("solica_slab", () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<PressurePlateBlock> SOLICA_PRESSURE_PLATE = registerBlock("solica_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<ButtonBlock> SOLICA_BUTTON = registerBlock("solica_button", () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
-    public static final DeferredBlock<FenceBlock> SOLICA_FENCE = registerBlock("solica_fence", () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<FenceGateBlock> SOLICA_FENCE_GATE = registerBlock("solica_fence_gate", () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<DoorBlock> SOLICA_DOOR = registerBlock("solica_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
-    public static final DeferredBlock<TrapDoorBlock> SOLICA_TRAPDOOR = registerBlock("solica_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<StairBlock> SOLICA_STAIRS = registerBlock("solica_stairs", () -> new StairBlock(NeoFactories_blocks.SOLICA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(2f)));
+    public static final DeferredBlock<SlabBlock> SOLICA_SLAB = registerBlock("solica_slab", () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f)));
+    public static final DeferredBlock<PressurePlateBlock> SOLICA_PRESSURE_PLATE = registerBlock("solica_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(0.5f)));
+    public static final DeferredBlock<ButtonBlock> SOLICA_BUTTON = registerBlock("solica_button", () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(2f).noCollission()));
+    public static final DeferredBlock<FenceBlock> SOLICA_FENCE = registerBlock("solica_fence", () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)));
+    public static final DeferredBlock<FenceGateBlock> SOLICA_FENCE_GATE = registerBlock("solica_fence_gate", () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(2f)));
+    public static final DeferredBlock<DoorBlock> SOLICA_DOOR = registerBlock("solica_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> SOLICA_TRAPDOOR = registerBlock("solica_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 
 
