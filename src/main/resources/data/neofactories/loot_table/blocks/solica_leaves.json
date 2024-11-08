@@ -47,10 +47,10 @@
                 },
                 {
                   "chances": [
-                    0.0008,
-                    0.002,
-                    0.00523,
-                    0.008
+                    0.008,
+                    0.02,
+                    0.0523,
+                    0.1
                   ],
                   "condition": "minecraft:table_bonus",
                   "enchantment": "minecraft:fortune"
@@ -117,7 +117,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 10.0,
+                "max": 4.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
