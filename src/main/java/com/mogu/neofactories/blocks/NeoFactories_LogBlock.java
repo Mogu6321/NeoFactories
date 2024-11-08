@@ -20,10 +20,6 @@ public class NeoFactories_LogBlock extends RotatedPillarBlock{
             if (state.is(NeoFactories_blocks.SOLICA_LOG.get())) {
                 return(NeoFactories_blocks.STRIPPED_SOLICA_LOG.get()).defaultBlockState().setValue(AXIS,state.getValue(AXIS));
             }
-
-            if (state.is(NeoFactories_blocks.SOLICA_LOG.get())) {
-                return(NeoFactories_blocks.STRIPPED_SOLICA_LOG.get()).defaultBlockState().setValue(AXIS,state.getValue(AXIS));
-            }
         }
 
         return super.getToolModifiedState(state, context, itemAbility, simulate);
