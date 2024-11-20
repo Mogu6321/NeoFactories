@@ -1,6 +1,6 @@
 package com.mogu.neofactories;
 
-import com.mogu.neofactories.blocks.NeoFactories_blocks;
+import  com.mogu.neofactories.blocks.NeoFactories_blocks;
 import com.mogu.neofactories.items.NeoFactories_items;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

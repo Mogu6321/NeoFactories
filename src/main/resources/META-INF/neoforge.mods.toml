@@ -41,7 +41,7 @@ displayName="NeoFactories" #mandatory
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="mogu,minorinrin" #optional
+authors="mogu6321,minorinrin" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''${mod_description}'''
