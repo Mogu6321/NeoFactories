@@ -1,7 +1,7 @@
 package com.mogu.neofactories;
 
-import com.mogu.neofactories.blocks.NeoFactories_blocks;
-import com.mogu.neofactories.items.NeoFactories_items;
+import com.mogu.neofactories.blocks.NeoFactories_Block;
+import com.mogu.neofactories.items.NeoFactories_Item;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -24,9 +24,9 @@ public class NeoFactories {
             modEventBus.addListener(this::commonSetup);
 
             NeoForge.EVENT_BUS.register(this);
-            NeoFactories_Tabs.register(modEventBus);//タブ
-            NeoFactories_items.register(modEventBus);//アイテム
-            NeoFactories_blocks.register(modEventBus);//ブロック
+            NeoFactories_Tab.register(modEventBus);//タブ
+            NeoFactories_Item.register(modEventBus);//アイテム
+            NeoFactories_Block.register(modEventBus);//ブロック
         }
     private void commonSetup(final FMLCommonSetupEvent event) {
     }

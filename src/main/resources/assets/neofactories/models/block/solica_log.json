@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "neofactories:block/solica_log_top",
-    "side": "neofactories:block/solica_log"
-  }
-}
