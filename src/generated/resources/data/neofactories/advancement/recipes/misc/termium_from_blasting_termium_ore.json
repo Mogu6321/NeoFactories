@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_termium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "neofactories:termium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "neofactories:termium_from_blasting_termium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_termium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "neofactories:termium_from_blasting_termium_ore"
+    ]
+  }
+}
