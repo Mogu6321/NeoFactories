@@ -17,7 +17,6 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -52,8 +51,8 @@ public class NeoFactoriesBlockLootTableProvider extends BlockLootSubProvider {
         add(NeoFactories_Block.SOLICA_SLAB.get(),block ->
                 createSlabItemTable(NeoFactories_Block.SOLICA_SLAB.get()));
         add(NeoFactories_Block.TERMIUM_ORE.get(),block ->
-                createMultipleOreDrops(NeoFactories_Block.TERMIUM_ORE.get(),NeoFactories_Item.TERMIUM.get(), 1,3));
-        this.add(NeoFactories_Block.SOLICA_LEAVES.get(), block ->
+                createOreDrop(NeoFactories_Block.TERMIUM_ORE.get(),NeoFactories_Item.TERMIUM.get()));
+        add(NeoFactories_Block.SOLICA_LEAVES.get(), block ->
                 createLeavesDrops(block, NeoFactories_Item.SOLIUM.get(), SOLIUM_CHANCES));
 
     }
@@ -88,16 +87,8 @@ public class NeoFactoriesBlockLootTableProvider extends BlockLootSubProvider {
 
     private static final float[] STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
 
-    private static final float[] SOLIUM_CHANCES = new float[]{0.0005F, 0.000625F, 0.00123333336F, 0.005F};
+    private static final float[] SOLIUM_CHANCES = new float[]{0.0007F, 0.00125F, 0.00723333336F, 0.05F};
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
-
-    }
 
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
