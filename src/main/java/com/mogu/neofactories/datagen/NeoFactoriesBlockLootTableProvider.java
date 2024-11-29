@@ -9,13 +9,19 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 
@@ -47,11 +53,42 @@ public class NeoFactoriesBlockLootTableProvider extends BlockLootSubProvider {
                 createSlabItemTable(NeoFactories_Block.SOLICA_SLAB.get()));
         add(NeoFactories_Block.TERMIUM_ORE.get(),block ->
                 createMultipleOreDrops(NeoFactories_Block.TERMIUM_ORE.get(),NeoFactories_Item.TERMIUM.get(), 1,3));
-        dropSelf(NeoFactories_Block.SOLICA_LEAVES.get());//change loot table yourself.
+        this.add(NeoFactories_Block.SOLICA_LEAVES.get(), block ->
+                createLeavesDrops(block, NeoFactories_Item.SOLIUM.get(), SOLIUM_CHANCES));
 
     }
 
+    protected LootTable.Builder createLeavesDrops(Block pLeavesBlock, Item pItem, float... pChances) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return this.createSilkTouchOrShearsDispatchTable(
+                        pLeavesBlock,
+                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(pLeavesBlock, LootItem.lootTableItem(pItem)))
+                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE), pChances))
+                )
+                .withPool(
+                        LootPool.lootPool()
+                                .setRolls(ConstantValue.exactly(1.0F))
+                                .when(this.doesNotHaveShearsOrSilkTouch())
+                                .add(
+                                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionDecay(
+                                                pLeavesBlock, LootItem.lootTableItem(Items.STICK).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
+                                        ))
+                                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE), STICK_CHANCES))
+                                )
+                );
+    }
 
+    private LootItemCondition.Builder doesNotHaveShearsOrSilkTouch() {
+        return this.hasShearsOrSilkTouch().invert();
+    }
+
+    private LootItemCondition.Builder hasShearsOrSilkTouch() {
+        return HAS_SHEARS.or(this.hasSilkTouch());
+    }
+
+    private static final float[] STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
+
+    private static final float[] SOLIUM_CHANCES = new float[]{0.0005F, 0.000625F, 0.00123333336F, 0.005F};
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);

@@ -1,9 +1,9 @@
-// 1.21	2024-11-25T23:50:19.8817504	Loot Tables
+// 1.21	2024-11-29T23:04:40.9552491	Loot Tables
 ac46238a9bd411a1e932d90bd6ae5937b90a61bd data/neofactories/loot_table/blocks/solica_button.json
 d6bbdbf9a2674868cd293136fcdda2d1333ec42c data/neofactories/loot_table/blocks/solica_door.json
 bf9d50c49a0c0efa1a813308a833ad84edb2a82e data/neofactories/loot_table/blocks/solica_fence.json
 3dbd593570ca9c3c9135ba5a01a0c946755b706e data/neofactories/loot_table/blocks/solica_fence_gate.json
-dd37d3c440a4e22a694033c547be09175b3ef54b data/neofactories/loot_table/blocks/solica_leaves.json
+041210878d5b70077b98ded42d3e55c53a5f195c data/neofactories/loot_table/blocks/solica_leaves.json
 84d906b026468812e51e1b440fb7895ee50e4226 data/neofactories/loot_table/blocks/solica_log.json
 50502c6fe4fb536e2dd51686f53e7659be01595e data/neofactories/loot_table/blocks/solica_planks.json
 fa5f2dd2d4dc17c9d2a229824c60ed0e91b5daf9 data/neofactories/loot_table/blocks/solica_pressure_plate.json

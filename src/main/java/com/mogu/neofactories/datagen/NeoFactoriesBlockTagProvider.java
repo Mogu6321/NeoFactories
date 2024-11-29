@@ -81,6 +81,6 @@ public class NeoFactoriesBlockTagProvider extends BlockTagsProvider {
     public static final TagKey<Block> SOLICA_LOGS = create("solica_logs");
 
     private static TagKey<Block> create(String pName) {
-        return TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace(pName));
+        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(NeoFactories.MODID,(pName)));
     }
 }
