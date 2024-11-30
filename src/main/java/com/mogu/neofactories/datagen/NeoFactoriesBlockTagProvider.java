@@ -4,13 +4,10 @@ package com.mogu.neofactories.datagen;
 
 import com.mogu.neofactories.NeoFactories;
 import com.mogu.neofactories.blocks.NeoFactories_Block;
+import com.mogu.neofactories.util.NeoFactories_Tag;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -35,7 +32,10 @@ public class NeoFactoriesBlockTagProvider extends BlockTagsProvider {
                 .add(NeoFactories_Block.SOLICA_LEAVES.get());
 
         tag(BlockTags.LOGS)
-                .add(NeoFactories_Block.SOLICA_LOG.get());
+                .add(NeoFactories_Block.SOLICA_LOG.get())
+                .add(NeoFactories_Block.STRIPPED_SOLICA_LOG.get())
+                .add(NeoFactories_Block.SOLICA_WOOD.get())
+                .add(NeoFactories_Block.STRIPPED_SOLICA_WOOD.get());
 
         tag(BlockTags.PLANKS)
                 .add(NeoFactories_Block.SOLICA_PLANKS.get());
@@ -71,16 +71,11 @@ public class NeoFactoriesBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(NeoFactories_Block.SOLICA_TRAPDOOR.get());
 
-        tag(SOLICA_LOGS)
+        tag(NeoFactories_Tag.Blocks.SOLICA_LOG)
                 .add(NeoFactories_Block.SOLICA_LOG.get())
-                .add(NeoFactories_Block.SOLICA_WOOD.get())
                 .add(NeoFactories_Block.STRIPPED_SOLICA_LOG.get())
+                .add(NeoFactories_Block.SOLICA_WOOD.get())
                 .add(NeoFactories_Block.STRIPPED_SOLICA_WOOD.get());
 
-    }
-    public static final TagKey<Block> SOLICA_LOGS = create("solica_logs");
-
-    private static TagKey<Block> create(String pName) {
-        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(NeoFactories.MODID,(pName)));
     }
 }

@@ -1,8 +1,8 @@
 {
   "values": [
     "neofactories:solica_log",
-    "neofactories:solica_wood",
     "neofactories:stripped_solica_log",
+    "neofactories:solica_wood",
     "neofactories:stripped_solica_wood"
   ]
 }
