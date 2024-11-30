@@ -1,0 +1,10 @@
+{
+  "values": {
+    "neofactories:solica_leaves": {
+      "chance": 0.3
+    },
+    "neofactories:solium": {
+      "chance": 0.5
+    }
+  }
+}
