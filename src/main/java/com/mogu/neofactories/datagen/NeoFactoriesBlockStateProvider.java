@@ -20,6 +20,7 @@ public class NeoFactoriesBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(NeoFactories_Block.SOLICA_PLANKS);
         blockWithItem(NeoFactories_Block.TERMIUM_ORE);
+        blockWithItem(NeoFactories_Block.RED_COBBLESTONE);
         //blockWithItem(NeoFactories_Block.TERMIUM_BLOCK);
 
         stairsBlock(NeoFactories_Block.SOLICA_STAIRS.get(),blockTexture(NeoFactories_Block.SOLICA_PLANKS.get()));

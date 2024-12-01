@@ -1,11 +1,11 @@
-// 1.21	2024-11-30T17:35:07.7007779	Tags for minecraft:block mod id neofactories
+// 1.21	2024-12-01T11:13:36.771425	Tags for minecraft:block mod id neofactories
 99de62545c2a0b763a7e9d0272872ad0682886c6 data/minecraft/tags/block/fences.json
 b731ae933250481b6e35db9c041e22bc8e1af4f3 data/minecraft/tags/block/fence_gates.json
 7624f00bd5d947673b4ae2256ea36cabfb893729 data/minecraft/tags/block/leaves.json
 971531ef5d3a32f8375c13d5b0616dc85df83b96 data/minecraft/tags/block/logs.json
 7624f00bd5d947673b4ae2256ea36cabfb893729 data/minecraft/tags/block/mineable/hoe.json
 331fd941d3441ccac671a22f8272282d586a33ac data/minecraft/tags/block/mineable/pickaxe.json
-331fd941d3441ccac671a22f8272282d586a33ac data/minecraft/tags/block/needs_iron_tool.json
+4c4fe3a7ffa5b3dffdd7b8999547d98e21a44a40 data/minecraft/tags/block/needs_iron_tool.json
 817529c0a24f1202143f478ad6e771e6de8fe02e data/minecraft/tags/block/planks.json
 5c11a0f11bb6aa7c621c3890c19e6499369cc807 data/minecraft/tags/block/wooden_buttons.json
 33ffcd190bea067e9d35038939756bb44dfac33e data/minecraft/tags/block/wooden_doors.json

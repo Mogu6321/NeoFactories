@@ -20,6 +20,7 @@ public class NeoFactories_Block {
             DeferredRegister.createBlocks(NeoFactories.MODID);
 
     public static final DeferredBlock<Block> TERMIUM_ORE = registerBlock("termium_ore", ()-> new DropExperienceBlock(UniformInt.of(5, 10),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> RED_COBBLESTONE = registerBlock("red_cobblestone",()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
     //public static final DeferredBlock<Block> TERMIUM_BLOCK = registerBlock("termium_block",()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)));
 //木材系ブロック
     public static final DeferredBlock<LeavesBlock> SOLICA_LEAVES = registerBlock("solica_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));

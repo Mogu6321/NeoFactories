@@ -41,7 +41,8 @@ public class NeoFactoriesBlockTagProvider extends BlockTagsProvider {
                 .add(NeoFactories_Block.SOLICA_PLANKS.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(NeoFactories_Block.TERMIUM_ORE.get());
+                .add(NeoFactories_Block.TERMIUM_ORE.get())
+                .add(NeoFactories_Block.RED_COBBLESTONE.get());
                 //.add(NeoFactories_Block.TERMIUM_BLOCK.get());
 
         tag(BlockTags.FENCES)

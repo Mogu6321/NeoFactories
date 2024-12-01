@@ -45,15 +45,12 @@ public class NeoFactoriesBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(NeoFactories_Block.SOLICA_TRAPDOOR.get());
         dropSelf(NeoFactories_Block.STRIPPED_SOLICA_LOG.get());
         dropSelf(NeoFactories_Block.STRIPPED_SOLICA_WOOD.get());
+        dropSelf(NeoFactories_Block.RED_COBBLESTONE.get());
         //dropSelf(NeoFactories_Block.TERMIUM_BLOCK.get());
-        add(NeoFactories_Block.SOLICA_DOOR.get(),block ->
-                createDoorTable(NeoFactories_Block.SOLICA_DOOR.get()));
-        add(NeoFactories_Block.SOLICA_SLAB.get(),block ->
-                createSlabItemTable(NeoFactories_Block.SOLICA_SLAB.get()));
-        add(NeoFactories_Block.TERMIUM_ORE.get(),block ->
-                createOreDrop(NeoFactories_Block.TERMIUM_ORE.get(),NeoFactories_Item.TERMIUM.get()));
-        add(NeoFactories_Block.SOLICA_LEAVES.get(), block ->
-                createLeavesDrops(block, NeoFactories_Item.SOLIUM.get(), SOLIUM_CHANCES));
+        add(NeoFactories_Block.SOLICA_DOOR.get(),block -> createDoorTable(NeoFactories_Block.SOLICA_DOOR.get()));
+        add(NeoFactories_Block.SOLICA_SLAB.get(),block -> createSlabItemTable(NeoFactories_Block.SOLICA_SLAB.get()));
+        add(NeoFactories_Block.TERMIUM_ORE.get(),block -> createOreDrop(NeoFactories_Block.TERMIUM_ORE.get(),NeoFactories_Item.TERMIUM.get()));
+        add(NeoFactories_Block.SOLICA_LEAVES.get(), block -> createLeavesDrops(block, NeoFactories_Item.SOLIUM.get(), SOLIUM_CHANCES));
 
     }
 
