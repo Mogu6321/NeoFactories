@@ -1,0 +1,21 @@
+{
+  "block.neofactories.red_cobblestone": "Red Cobblestone",
+  "block.neofactories.solica_button": "Solica Button",
+  "block.neofactories.solica_door": "Solica Door",
+  "block.neofactories.solica_fence": "Solica Fence",
+  "block.neofactories.solica_fence_gate": "Solica Fence Gate",
+  "block.neofactories.solica_leaves": "Solica Leaves",
+  "block.neofactories.solica_log": "Solica Log",
+  "block.neofactories.solica_planks": "Solica Planks",
+  "block.neofactories.solica_pressure_plate": "Solica Pressure Plate",
+  "block.neofactories.solica_slab": "Solica Slab",
+  "block.neofactories.solica_stairs": "Solica Stairs",
+  "block.neofactories.solica_trapdoor": "Solica Trapdoor",
+  "block.neofactories.solica_wood": "Solica Wood",
+  "block.neofactories.stripped_solica_log": "Stripped Solica Log",
+  "block.neofactories.stripped_solica_wood": "Stripped Solica Wood",
+  "block.neofactories.termium_ore": "Termium Ore",
+  "creativetab.neofactories.tab": "NeoFactories",
+  "item.neofactories.solium": "Solium",
+  "item.neofactories.termium": "Termium"
+}

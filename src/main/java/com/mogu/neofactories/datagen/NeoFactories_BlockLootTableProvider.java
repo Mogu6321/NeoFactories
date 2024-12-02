@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 
-public class NeoFactoriesBlockLootTableProvider extends BlockLootSubProvider {
-    protected NeoFactoriesBlockLootTableProvider(HolderLookup.Provider pRegistries) {
+public class NeoFactories_BlockLootTableProvider extends BlockLootSubProvider {
+    protected NeoFactories_BlockLootTableProvider(HolderLookup.Provider pRegistries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), pRegistries);
     }
 

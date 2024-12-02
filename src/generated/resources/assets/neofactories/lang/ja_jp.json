@@ -1,0 +1,21 @@
+{
+  "block.neofactories.red_cobblestone": "赤い丸石",
+  "block.neofactories.solica_button": "ソリカのボタン",
+  "block.neofactories.solica_door": "ソリカのドア",
+  "block.neofactories.solica_fence": "ソリカのフェンス",
+  "block.neofactories.solica_fence_gate": "ソリカのフェンスゲート",
+  "block.neofactories.solica_leaves": "ソリカの葉",
+  "block.neofactories.solica_log": "ソリカの原木",
+  "block.neofactories.solica_planks": "ソリカの板材",
+  "block.neofactories.solica_pressure_plate": "ソリカの感圧版",
+  "block.neofactories.solica_slab": "ソリカのハーフブロック",
+  "block.neofactories.solica_stairs": "ソリカの階段",
+  "block.neofactories.solica_trapdoor": "ソリカのトラップドア",
+  "block.neofactories.solica_wood": "ソリカの木",
+  "block.neofactories.stripped_solica_log": "樹皮のはがれたソリカの原木",
+  "block.neofactories.stripped_solica_wood": "樹皮のはがれたソリカの木",
+  "block.neofactories.termium_ore": "テルミウム鉱石",
+  "creativetab.neofactories.tab": "NeoFactories",
+  "item.neofactories.solium": "ソリウム",
+  "item.neofactories.termium": "テルミウム"
+}

@@ -10,8 +10,8 @@ import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 
 import java.util.concurrent.CompletableFuture;
 
-public class NeoFactoriesDataMapProvider extends DataMapProvider {
-    protected NeoFactoriesDataMapProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+public class NeoFactories_DataMapProvider extends DataMapProvider {
+    protected NeoFactories_DataMapProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(packOutput, lookupProvider);
     }
 

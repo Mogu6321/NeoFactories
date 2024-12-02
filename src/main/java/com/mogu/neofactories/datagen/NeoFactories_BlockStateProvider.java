@@ -11,8 +11,8 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-public class NeoFactoriesBlockStateProvider extends BlockStateProvider {
-    public NeoFactoriesBlockStateProvider(PackOutput output,ExistingFileHelper exFileHelper) {
+public class NeoFactories_BlockStateProvider extends BlockStateProvider {
+    public NeoFactories_BlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, NeoFactories.MODID, exFileHelper);
     }
 

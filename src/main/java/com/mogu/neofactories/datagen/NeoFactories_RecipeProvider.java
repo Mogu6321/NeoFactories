@@ -15,8 +15,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class NeoFactoriesRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    public NeoFactoriesRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
+public class NeoFactories_RecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public NeoFactories_RecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
         super(pOutput, pRegistries);
     }
 

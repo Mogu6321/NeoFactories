@@ -13,8 +13,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class NeoFactoriesItemTagProvider extends ItemTagsProvider {
-    public NeoFactoriesItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider, CompletableFuture<TagLookup<Block>> pItemTags, @Nullable ExistingFileHelper existingFileHelper) {
+public class NeoFactories_ItemTagProvider extends ItemTagsProvider {
+    public NeoFactories_ItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider, CompletableFuture<TagLookup<Block>> pItemTags, @Nullable ExistingFileHelper existingFileHelper) {
         super(pOutput, pLookupProvider, pItemTags, NeoFactories.MODID, existingFileHelper);
     }
 

@@ -14,8 +14,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class NeoFactoriesBlockTagProvider extends BlockTagsProvider {
-    public NeoFactoriesBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,@Nullable ExistingFileHelper existingFileHelper) {
+public class NeoFactories_BlockTagProvider extends BlockTagsProvider {
+    public NeoFactories_BlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, NeoFactories.MODID, existingFileHelper);
     }
 

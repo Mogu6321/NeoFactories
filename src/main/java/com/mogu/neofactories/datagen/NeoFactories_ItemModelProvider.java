@@ -10,8 +10,8 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-public class NeoFactoriesItemModelProvider extends ItemModelProvider {
-    public NeoFactoriesItemModelProvider(PackOutput output,ExistingFileHelper existingFileHelper) {
+public class NeoFactories_ItemModelProvider extends ItemModelProvider {
+    public NeoFactories_ItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, NeoFactories.MODID, existingFileHelper);
     }
 
