@@ -20,9 +20,9 @@ public class NeoFactories_jajpProvider extends LanguageProvider {
         addBlock(NeoFactories_Block.RED_COBBLESTONE,"赤い丸石");
 
         addBlock(NeoFactories_Block.SOLICA_LOG,"ソリカの原木");
-        addBlock(NeoFactories_Block.STRIPPED_SOLICA_LOG,"樹皮のはがれたソリカの原木");
+        addBlock(NeoFactories_Block.STRIPPED_SOLICA_LOG,"樹皮を剥いだソリカの原木");
         addBlock(NeoFactories_Block.SOLICA_WOOD,"ソリカの木");
-        addBlock(NeoFactories_Block.STRIPPED_SOLICA_WOOD,"樹皮のはがれたソリカの木");
+        addBlock(NeoFactories_Block.STRIPPED_SOLICA_WOOD,"樹皮を剥いだソリカの木");
         addBlock(NeoFactories_Block.SOLICA_PLANKS,"ソリカの板材");
         addBlock(NeoFactories_Block.SOLICA_LEAVES,"ソリカの葉");
         addBlock(NeoFactories_Block.SOLICA_BUTTON,"ソリカのボタン");
