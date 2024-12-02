@@ -24,10 +24,10 @@ public class NeoFactories_Tab {
                         output.accept(NeoFactories_Block.TERMIUM_ORE);
                         output.accept(NeoFactories_Block.SOLICA_LEAVES);
                         output.accept(NeoFactories_Block.SOLICA_LOG);
-                        output.accept(NeoFactories_Block.SOLICA_PLANKS);
                         output.accept(NeoFactories_Block.SOLICA_WOOD);
                         output.accept(NeoFactories_Block.STRIPPED_SOLICA_LOG);
                         output.accept(NeoFactories_Block.STRIPPED_SOLICA_WOOD);
+                        output.accept(NeoFactories_Block.SOLICA_PLANKS);
                         output.accept(NeoFactories_Block.SOLICA_BUTTON);
                         output.accept(NeoFactories_Block.SOLICA_DOOR);
                         output.accept(NeoFactories_Block.SOLICA_FENCE);
